@@ -86,4 +86,5 @@ class UserController extends Controller
 Now it's time to run this example copy the below link in your URL and get output.
 
 http://localhost:8000/check/role?type=user
+<br>
 http://localhost:8000/check/role?type=admin
