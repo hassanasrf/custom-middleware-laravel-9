@@ -1,6 +1,6 @@
 # Create Custom Middleware In Laravel 9
 
-Step 1 : Create Middleware
+Step 1 : Create Middleware <br>
 In this step, we will create custom middleware. So, run the below command in your terminal. 
 
 ```php
@@ -34,7 +34,7 @@ class RoleType
 }
 ```
 
-Step 2 : Register This Middleware on Kernel File
+Step 2 : Register This Middleware on Kernel File <br>
 Now, we have to register this middleware on the kernel file.
 ```php
 app/Http/Kernel.php
@@ -44,7 +44,7 @@ app/Http/Kernel.php
         'roleType' => \App\Http\Middleware\RoleType::class,
     ];
 ```
-Step 3: Add Route
+Step 3: Add Route <br>
 Now, add route and add RoleType middleware in this route. Also, you can add middleware to the group of routes. 
 ```php
 <?php
@@ -65,7 +65,7 @@ use App\Http\Controllers\UserController;
 Route::get('check/role',[UserController::class,'checkRole'])->middleware('roleType');
 ```
 
-Step 4 :  Add Controller
+Step 4 :  Add Controller <br>
 In this step, we will create UserController with a checkrole function.
 
 ```php
